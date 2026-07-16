@@ -109,13 +109,134 @@ document.addEventListener('DOMContentLoaded', () => {
             const message = formData.get('message');
 
             const whatsappMessage = encodeURIComponent(
-                `Olá Ricardo! Meu nome é ${name}.\n\nEmail: ${email}\n\n${message}`
+                `Olá Ricardo!\n\nMe cadastrei no seu portfólio:\n*Nome:* ${name}\n*Email:* ${email}\n*WhatsApp:* ${whatsapp}\n\n*Mensagem:*\n${message}`
             );
 
-            window.open(`https://wa.me/55XXXXXXXXXXX?text=${whatsappMessage}`, '_blank');
+            window.open(`https://wa.me/5511946038180?text=${whatsappMessage}`, '_blank');
 
             contactForm.reset();
         });
+    }
+
+    // FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+            
+            // Close all items
+            faqItems.forEach(el => {
+                el.classList.remove('active');
+                el.querySelector('.faq-answer').style.maxHeight = null;
+            });
+            
+            // Open clicked item if it wasn't active
+            if (!isActive) {
+                item.classList.add('active');
+                const answer = item.querySelector('.faq-answer');
+                answer.style.maxHeight = answer.scrollHeight + "px";
+            }
+        });
+    });
+
+    // Automation Simulator
+    const btnSimulate = document.getElementById('btnSimulate');
+    const btnResetSimulate = document.getElementById('btnResetSimulate');
+    const nodes = [
+        document.getElementById('node1'),
+        document.getElementById('node2'),
+        document.getElementById('node3'),
+        document.getElementById('node4')
+    ];
+    const connectors = [
+        document.getElementById('connector1'),
+        document.getElementById('connector2'),
+        document.getElementById('connector3')
+    ];
+    const infoTitle = document.getElementById('flowInfoTitle');
+    const infoDesc = document.getElementById('flowInfoDesc');
+
+    const stepDetails = [
+        {
+            title: "1. Captura & Comentário no Instagram",
+            desc: "O visitante comenta 'QUERO' em uma publicação ou envia um Direct. A automação identifica a palavra-chave imediatamente e inicia o atendimento personalizado 24 horas por dia."
+        },
+        {
+            title: "2. Qualificação via ManyChat DM",
+            desc: "O bot inicia uma conversa privada no Direct do Instagram, solicitando de forma amigável o e-mail e o número de WhatsApp para cadastrar o lead no evento."
+        },
+        {
+            title: "3. Integração Make.com & CRM",
+            desc: "O Make.com recebe os dados coletados instantaneamente, cadastra o lead na lista do ActiveCampaign, cria a oportunidade no CRM de vendas e agenda lembretes de envio."
+        },
+        {
+            title: "4. Disparo do Link do Grupo VIP no WhatsApp",
+            desc: "A API do WhatsApp envia uma mensagem personalizada contendo o link do grupo VIP e o ingresso do evento. O lead agora está integrado no canal de maior conversão do lançamento!"
+        }
+    ];
+
+    let simulationInterval = null;
+    let currentStep = 0;
+
+    const runSimulation = () => {
+        btnSimulate.disabled = true;
+        btnSimulate.textContent = "Simulando...";
+        
+        const executeStep = () => {
+            if (currentStep < nodes.length) {
+                // Highlight current node
+                nodes[currentStep].classList.add('active');
+                infoTitle.textContent = stepDetails[currentStep].title;
+                infoDesc.textContent = stepDetails[currentStep].desc;
+                
+                // If there's a next connector, animate it
+                if (currentStep < connectors.length) {
+                    setTimeout(() => {
+                        connectors[currentStep].classList.add('completed');
+                    }, 500);
+                }
+                
+                currentStep++;
+                simulationInterval = setTimeout(executeStep, 3500);
+            } else {
+                // Simulation complete
+                btnSimulate.style.display = 'none';
+                btnResetSimulate.style.display = 'inline-block';
+                btnResetSimulate.disabled = false;
+                infoTitle.textContent = "Simulação Concluída com Sucesso!";
+                infoDesc.textContent = "Em menos de 10 segundos, o lead foi capturado, qualificado, salvo no CRM e inserido no WhatsApp. Essa estrutura maximiza a conversão do seu lançamento digital.";
+            }
+        };
+
+        executeStep();
+    };
+
+    const resetSimulation = () => {
+        clearTimeout(simulationInterval);
+        currentStep = 0;
+        
+        nodes.forEach(node => {
+            node.classList.remove('active', 'completed');
+        });
+        connectors.forEach(conn => {
+            conn.classList.remove('completed');
+        });
+        
+        btnSimulate.style.display = 'inline-block';
+        btnSimulate.disabled = false;
+        btnSimulate.textContent = "Iniciar Simulação";
+        btnResetSimulate.style.display = 'none';
+        
+        infoTitle.textContent = "Simulador Pronto";
+        infoDesc.textContent = "Clique em 'Iniciar Simulação' para rodar o fluxo completo de automação e entender as etapas.";
+    };
+
+    if (btnSimulate) {
+        btnSimulate.addEventListener('click', runSimulation);
+    }
+    if (btnResetSimulate) {
+        btnResetSimulate.addEventListener('click', resetSimulation);
     }
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
