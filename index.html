@@ -3,26 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ricardo Prazeres | Gestor de Automações para Lançamentos Digitais</title>
+    <title>Ricardo Prazeres | Especialista & Gestor de Automações para Lançamentos Digitais</title>
+    <meta name="description" content="Transforme seu lançamento digital em uma operação automatizada e escalável. Automações inteligentes com Make, ActiveCampaign, ManyChat, WhatsApp API e Inteligência Artificial.">
+    <meta name="keywords" content="Gestor de Automações, Lançamentos Digitais, ManyChat, Make.com, ActiveCampaign, WhatsApp API, Clint, Automação de Vendas, Infoprodutos">
+    <meta name="author" content="Ricardo Prazeres de Araújo">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ricardo-prazeres-automacoes.vercel.app">
+    <meta property="og:title" content="Ricardo Prazeres | Gestor de Automações para Lançamentos Digitais">
+    <meta property="og:description" content="Automações de alta conversão para lançamentos de 6 e 7 dígitos. Integrações com WhatsApp, CRM e IA.">
+    <meta property="og:image" content="ricardo.png">
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Structured Data JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Ricardo Prazeres Automações",
+      "image": "ricardo.png",
+      "description": "Gestão de automações estratégicas para lançamentos digitais de infoprodutos.",
+      "telephone": "+5511946038180",
+      "email": "contato@ricardoprazeres.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "BR"
+      },
+      "priceRange": "$$$"
+    }
+    </script>
 </head>
 <body>
+    <!-- Background Glow Aura -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- Navigation Bar -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="#hero" class="logo">RP<span>Automações</span></a>
+            <a href="#hero" class="logo">
+                <div class="logo-icon">⚡</div>
+                <span>RP<strong>Automações</strong></span>
+            </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#servicos">Soluções</a></li>
+                <li><a href="#roi-calculator">Calculadora ROI</a></li>
                 <li><a href="#ferramentas">Ferramentas</a></li>
-                <li><a href="#simulador">Simulador</a></li>
+                <li><a href="#simulador">Simulador Live</a></li>
                 <li><a href="#resultados">Resultados</a></li>
                 <li><a href="#faq">Dúvidas</a></li>
                 <li><a href="#contato" class="btn-nav">Fale Comigo</a></li>
             </ul>
-            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -30,97 +69,158 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section class="hero" id="hero">
-        <div class="hero-bg"></div>
         <div class="container hero-container">
             <div class="hero-content">
-                <span class="hero-badge">Gestor de Automações</span>
-                <h1>Transforme seu <span class="gradient-text">Lançamento Digital</span> em uma máquina de vendas</h1>
-                <p>Automações inteligentes que convertem leads em clientes. Mais de 3 anos criando estratégias que geram múltiplos de 6 a 7 dígitos.</p>
-                <div class="hero-buttons">
-                    <a href="#contato" class="btn btn-primary">Quero automatizar meu lançamento</a>
-                    <a href="#resultados" class="btn btn-secondary">Ver resultados</a>
+                <div class="hero-badge-wrapper">
+                    <span class="hero-badge">
+                        <span class="pulse-dot"></span>
+                        Gestor de Automações &amp; Futuro Engenheiro de Computação
+                    </span>
                 </div>
+                <h1>Transforme seu <span class="gradient-text">Lançamento Digital</span> em uma máquina de vendas autônoma</h1>
+                <p class="hero-subtitle">
+                    Estratégias de automação inteligente via WhatsApp API, ActiveCampaign, Make e IA que capturam, qualificam e recuperam vendas 24 horas por dia.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#simulador" class="btn btn-primary">
+                        <span>Testar Simulador ao Vivo</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="https://wa.me/5511946038180?text=Ol%C3%A1%20Ricardo!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20automatizar%20meu%20lan%C3%A7amento." target="_blank" rel="noopener" class="btn btn-whatsapp-hero">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        <span>Conversar no WhatsApp</span>
+                    </a>
+                </div>
+                
                 <div class="hero-stats">
-                    <div class="stat">
+                    <div class="stat-card">
                         <span class="stat-number" data-target="50">0</span><span class="stat-plus">+</span>
-                        <span class="stat-label">Lançamentos</span>
+                        <span class="stat-label">Lançamentos Executados</span>
                     </div>
-                    <div class="stat">
+                    <div class="stat-card">
                         <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
                         <span class="stat-label">Anos de Experiência</span>
                     </div>
-                    <div class="stat">
-                        <span class="stat-number" data-target="6">0</span><span class="stat-plus">+</span>
-                        <span class="stat-label">Dígitos Faturados</span>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="7">0</span><span class="stat-plus"> Dígitos</span>
+                        <span class="stat-label">Múltiplos Faturados</span>
                     </div>
                 </div>
             </div>
+
             <div class="hero-visual">
-                <div class="floating-card card-1">
-                    <div class="card-icon">📧</div>
-                    <span>ActiveCampaign</span>
-                </div>
-                <div class="floating-card card-2">
-                    <div class="card-icon">🤖</div>
-                    <span>ManyChat</span>
-                </div>
-                <div class="floating-card card-3">
-                    <div class="card-icon">⚡</div>
-                    <span>Make</span>
-                </div>
-                <div class="hero-graphic">
-                    <div class="circle circle-1"></div>
-                    <div class="circle circle-2"></div>
-                    <div class="circle circle-3"></div>
+                <div class="visual-card-wrapper">
+                    <div class="hero-main-card">
+                        <div class="card-header-status">
+                            <span class="status-indicator"></span>
+                            <span>Sistema de Automação Ativo</span>
+                        </div>
+                        <div class="automation-pipeline-preview">
+                            <div class="pipeline-step active">
+                                <div class="step-icon">📲</div>
+                                <div class="step-info">
+                                    <strong>Captura Instagram DM</strong>
+                                    <span>Comentário trigger "QUERO"</span>
+                                </div>
+                                <span class="step-check">✓</span>
+                            </div>
+                            <div class="pipeline-step active">
+                                <div class="step-icon">⚡</div>
+                                <div class="step-info">
+                                    <strong>Make.com + ActiveCampaign</strong>
+                                    <span>Segmentação &amp; Tag de Lead</span>
+                                </div>
+                                <span class="step-check">✓</span>
+                            </div>
+                            <div class="pipeline-step active">
+                                <div class="step-icon">💬</div>
+                                <div class="step-info">
+                                    <strong>WhatsApp API Oficial</strong>
+                                    <span>Envio de Ingresso VIP &amp; Grupo</span>
+                                </div>
+                                <span class="step-check">✓</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Badges -->
+                    <div class="floating-badge badge-1">
+                        <span class="badge-icon">📧</span>
+                        <div>
+                            <strong>ActiveCampaign</strong>
+                            <small>Fluxos de E-mail</small>
+                        </div>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <span class="badge-icon">🤖</span>
+                        <div>
+                            <strong>ManyChat &amp; Clint</strong>
+                            <small>Automação DM &amp; WA</small>
+                        </div>
+                    </div>
+                    <div class="floating-badge badge-3">
+                        <span class="badge-icon">🧠</span>
+                        <div>
+                            <strong>Gemini &amp; ChatGPT</strong>
+                            <small>Qualificação com IA</small>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="scroll-indicator">
+
+        <a href="#sobre" class="scroll-indicator" aria-label="Rolar para baixo">
             <div class="mouse">
                 <div class="wheel"></div>
             </div>
-            <span>Role para baixo</span>
-        </div>
+            <span>Explorar</span>
+        </a>
     </section>
 
+    <!-- About Section -->
     <section class="about" id="sobre">
         <div class="container about-container">
-            <div class="about-image">
-                <img src="ricardo.png" alt="Ricardo Prazeres de Araújo" width="400" height="400" loading="lazy">
-                <div class="about-badge">
-                    <span class="badge-icon">🎓</span>
-                    <div>
-                        <strong>Administração de Empresas</strong>
-                        <span>Engenharia da Computação</span>
+            <div class="about-image-wrapper">
+                <div class="about-image-card">
+                    <img src="ricardo.png" alt="Ricardo Prazeres de Araújo" width="400" height="400" loading="lazy">
+                    <div class="about-experience-badge">
+                        <span class="exp-number">3+</span>
+                        <span class="exp-text">Anos gerando resultados em lançamentos</span>
                     </div>
                 </div>
             </div>
             <div class="about-content">
-                <span class="section-badge">Sobre Mim</span>
+                <span class="section-badge">Visão Estratégica &amp; Engenharia</span>
                 <h2>Ricardo Prazeres de Araújo</h2>
-                <p class="about-text">Sou gestor de automações especializado em <strong>lançamentos digitais</strong>. Com formação em Administração de Empresas e cursando o último ano de Engenharia da Computação, uno conhecimento estratégico com expertise técnica para criar automações que realmente convertem.</p>
-                <p class="about-text">Há mais de <strong>3 anos</strong> atuo no mercado de infoprodutos, ajudando experts e empresas a escalarem seus lançamentos com estratégias de automação que geram resultados de <strong>múltiplos 6 e 7 dígitos</strong>.</p>
-                <div class="about-highlights">
-                    <div class="highlight">
-                        <span class="highlight-icon">🚀</span>
+                <p class="about-lead">
+                    Uno a precisão da <strong>Engenharia da Computação</strong> com a visão de negócios da <strong>Administração de Empresas</strong> para construir arquiteturas de automação de alto desempenho.
+                </p>
+                <p class="about-text">
+                    Especializado no ecossistema de lançamentos digitais (Semente, Interno, Meteorórico e Perpétuo), já arquitetei e gerenciei a estrutura tecnológica de dezenas de lançamentos que superaram múltiplos <strong>6 e 7 dígitos de faturamento</strong>.
+                </p>
+
+                <div class="about-highlights-grid">
+                    <div class="highlight-item">
+                        <div class="highlight-icon">🎯</div>
                         <div>
-                            <strong>Foco em Resultados</strong>
-                            <span>Automações pensadas para converter</span>
+                            <strong>Foco em Conversão Real</strong>
+                            <p>Automações desenhadas para reduzir churn e aumentar a taxa de presença em lives.</p>
                         </div>
                     </div>
-                    <div class="highlight">
-                        <span class="highlight-icon">🧠</span>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">⚙️</div>
                         <div>
-                            <strong>Visão Estratégica</strong>
-                            <span>Background em administração e tecnologia</span>
+                            <strong>Arquitetura Sem Falhas</strong>
+                            <p>Testes de carga e redundância para suportar picos de milhares de acessos simultâneos.</p>
                         </div>
                     </div>
-                    <div class="highlight">
-                        <span class="highlight-icon">📈</span>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">🧠</div>
                         <div>
-                            <strong>Experiência Comprovada</strong>
-                            <span>Múltiplos lançamentos de 6 e 7 dígitos</span>
+                            <strong>Inteligência Artificial Integrada</strong>
+                            <p>Uso de LLMs para qualificação inteligente e triagem automatizada de leads VIP.</p>
                         </div>
                     </div>
                 </div>
@@ -128,511 +228,559 @@
         </div>
     </section>
 
+    <!-- Solutions / Services Section -->
     <section class="services" id="servicos">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">Serviços</span>
-                <h2>Soluções completas para seu <span class="gradient-text">lançamento digital</span></h2>
-                <p>Do primeiro contato ao pós-venda, crio automações que trabalham 24/7 para maximizar seus resultados.</p>
+                <span class="section-badge">Soluções Estratégicas</span>
+                <h2>Automações ponta a ponta para seu <span class="gradient-text">Lançamento</span></h2>
+                <p>Estruturas completas desenhadas para maximizar o retorno de cada centavo investido em tráfego pago.</p>
             </div>
-            <div class="services-grid">
-                <div class="service-card">
+
+            <!-- Services Filter Tabs -->
+            <div class="services-tabs">
+                <button class="tab-btn active" data-tab="all">Todas as Soluções</button>
+                <button class="tab-btn" data-tab="captura">Captura &amp; Grupos</button>
+                <button class="tab-btn" data-tab="live">Lives &amp; Lembretes</button>
+                <button class="tab-btn" data-tab="vendas">Carrinho &amp; Recuperação</button>
+                <button class="tab-btn" data-tab="ia">IAs Generativas</button>
+            </div>
+
+            <div class="services-grid" id="servicesGrid">
+                <!-- Service 1 -->
+                <div class="service-card featured" data-category="vendas captura">
+                    <div class="featured-tag">Mais Solicitado</div>
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
                     </div>
-                    <h3>Email Marketing Automatizado</h3>
-                    <p>Sequências de emails inteligentes via ActiveCampaign que nutrem leads e convertem no momento certo do lançamento.</p>
-                    <ul class="service-features">
-                        <li>Sequências de nutrição</li>
-                        <li>Segmentação avançada</li>
-                        <li>Trigger por comportamento</li>
+                    <h3>Automação de WhatsApp via API Oficial</h3>
+                    <p>Disparos em massa seguros (via Clint e ManyChat API) de mensagens personalizadas, lembretes de aula e links diretos para Grupos VIP.</p>
+                    <ul class="service-checklist">
+                        <li><span>✓</span> API Oficial à prova de banimentos</li>
+                        <li><span>✓</span> Disparos segmentados por comportamento</li>
+                        <li><span>✓</span> Entrada automática nos grupos de WhatsApp</li>
                     </ul>
                 </div>
-                <div class="service-card featured">
-                    <div class="featured-badge">Mais procurado</div>
+
+                <!-- Service 2 -->
+                <div class="service-card" data-category="captura">
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                        </svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                     </div>
-                    <h3>Automação via WhatsApp</h3>
-                    <p>Disparos em massa pela API oficial através do ManyChat e Clint. Mensagens personalizadas que geram engajamento real.</p>
-                    <ul class="service-features">
-                        <li>API oficial do WhatsApp</li>
-                        <li>Disparos em massa seguros</li>
-                        <li>Fluxos de conversão</li>
+                    <h3>Email Marketing Inteligente</h3>
+                    <p>Funis de e-mail estratégicos no ActiveCampaign com automação baseada em tags, pontuação de lead (lead scoring) e aberturas.</p>
+                    <ul class="service-checklist">
+                        <li><span>✓</span> Sequências de aquecimento &amp; pitch</li>
+                        <li><span>✓</span> Sanitização e alta entregabilidade</li>
+                        <li><span>✓</span> Trigger por cliques em links estratégicos</li>
                     </ul>
                 </div>
-                <div class="service-card">
+
+                <!-- Service 3 -->
+                <div class="service-card" data-category="live captura">
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-                            <path d="M2 17l10 5 10-5"></path>
-                            <path d="M2 12l10 5 10-5"></path>
-                        </svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
                     </div>
-                    <h3>Integrações com Make</h3>
-                    <p>Conecto todas as suas ferramentas em um ecossistema automatizado que funciona perfeitamente.</p>
-                    <ul class="service-features">
-                        <li>Integrações customizadas</li>
-                        <li>Workflows complexos</li>
-                        <li>Automação ponta a ponta</li>
+                    <h3>Integrações Complexas com Make.com</h3>
+                    <p>Conexão entre Hotmart, Eduzz, Kiwify, CRM, ActiveCampaign e Planilhas criando um ecossistema sincronizado sem perda de dados.</p>
+                    <ul class="service-checklist">
+                        <li><span>✓</span> Webhooks em tempo real</li>
+                        <li><span>✓</span> Tratamento contra duplicidades de lead</li>
+                        <li><span>✓</span> Dashboard de métricas unificado</li>
                     </ul>
                 </div>
-                <div class="service-card">
+
+                <!-- Service 4 -->
+                <div class="service-card" data-category="live">
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                            <line x1="8" y1="21" x2="16" y2="21"></line>
-                            <line x1="12" y1="17" x2="12" y2="21"></line>
-                        </svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
                     </div>
-                    <h3>Certificados & Ingressos</h3>
-                    <p>Automação de certificados de aulas e ingressos para lembretes, entregues automaticamente ao aluno.</p>
-                    <ul class="service-features">
-                        <li>Certificados automáticos</li>
-                        <li>Ingressos para aulas ao vivo</li>
-                        <li>Lembretes personalizados</li>
+                    <h3>Ingressos VIP &amp; Certificados Automáticos</h3>
+                    <p>Geração dinâmica de ingressos personalizados para lives do CPL e emissão automática de certificados com dados do aluno.</p>
+                    <ul class="service-checklist">
+                        <li><span>✓</span> Ingressos com imagem personalizada</li>
+                        <li><span>✓</span> Lembretes de evento via WhatsApp</li>
+                        <li><span>✓</span> Certificados em PDF instantâneos</li>
                     </ul>
                 </div>
-                <div class="service-card">
+
+                <!-- Service 5 -->
+                <div class="service-card" data-category="vendas ia">
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="9" cy="7" r="4"></circle>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                        </svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                     </div>
-                    <h3>Funis de Captura</h3>
-                    <p>Chatbots inteligentes no ManyChat que captam, qualificam e convertem leads automaticamente.</p>
-                    <ul class="service-features">
-                        <li>Chatbots no Instagram</li>
-                        <li>Qualificação automática</li>
-                        <li>Integração com CRM</li>
+                    <h3>Chatbots de Qualificação com IA (Gemini/ChatGPT)</h3>
+                    <p>Atendimento inteligente no Instagram e WhatsApp que responde dúvidas comuns sobre o curso e tria leads quentes para o comercial.</p>
+                    <ul class="service-checklist">
+                        <li><span>✓</span> Respostas baseadas no FAQ do curso</li>
+                        <li><span>✓</span> Qualificação automatizada de leads</li>
+                        <li><span>✓</span> Transbordo imediato para o time de vendas</li>
                     </ul>
                 </div>
-                <div class="service-card">
+
+                <!-- Service 6 -->
+                <div class="service-card" data-category="vendas">
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-                        </svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
                     </div>
-                    <h3>Pós-Venda & Retenção</h3>
-                    <p>Automações que mantêm seus alunos engajados e aumentam o LTV com comunicações estratégicas.</p>
-                    <ul class="service-features">
-                        <li>Onboarding automático</li>
-                        <li>Pesquisas de satisfação</li>
-                        <li>Upsell inteligente</li>
+                    <h3>Recuperação de Vendas &amp; Carrinho Abandonado</h3>
+                    <p>Automações imediatas ativadas ao identificar abandono de checkout, boletos gerados e PIX pendentes com links de pagamento rápido.</p>
+                    <ul class="service-checklist">
+                        <li><span>✓</span> Disparo de PIX copia e cola no WhatsApp</li>
+                        <li><span>✓</span> Sequência de quebra de objeções</li>
+                        <li><span>✓</span> Recuperação com +25% de conversão</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ROI Calculator Section -->
+    <section class="roi-section" id="roi-calculator">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Calculadora de Impacto</span>
+                <h2>Calcule o <span class="gradient-text">ROI Estimado</span> para seu Lançamento</h2>
+                <p>Veja quanto a implementação de automações estratégicas pode adicionar ao faturamento da sua campanha.</p>
+            </div>
+
+            <div class="calculator-card">
+                <div class="calculator-inputs">
+                    <div class="calculator-group">
+                        <div class="slider-header">
+                            <label for="leadRange">Tamanho da sua Base de Leads:</label>
+                            <span class="slider-value" id="leadValue">15.000 leads</span>
+                        </div>
+                        <input type="range" id="leadRange" min="1000" max="100000" step="1000" value="15000">
+                    </div>
+
+                    <div class="calculator-group">
+                        <div class="slider-header">
+                            <label for="ticketRange">Ticket Médio do Infoproduto (R$):</label>
+                            <span class="slider-value" id="ticketValue">R$ 997</span>
+                        </div>
+                        <input type="range" id="ticketRange" min="197" max="5000" step="100" value="997">
+                    </div>
+                </div>
+
+                <div class="calculator-outputs">
+                    <div class="output-card highlight-output">
+                        <span class="output-label">Faturamento Adicional Estimado</span>
+                        <h3 class="output-number" id="calcRevenue">R$ 44.865,00</h3>
+                        <small>*Baseado em +3% de conversão recuperada via WhatsApp e e-mail automatizado</small>
+                    </div>
+                    <div class="outputs-row">
+                        <div class="output-card">
+                            <span class="output-label">Leads Adicionais Recuperados</span>
+                            <h4 id="calcLeads">450 leads</h4>
+                        </div>
+                        <div class="output-card">
+                            <span class="output-label">Horas Operacionais Salvas</span>
+                            <h4 id="calcHours">85 horas/mês</h4>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/5511946038180?text=Quero%20alcan%C3%A7ar%20a%20estimativa%20do%20meu%20lan%C3%A7amento%20com%20automa%C3%A7%C3%B5es!" target="_blank" rel="noopener" class="btn btn-primary btn-full">
+                        Quero Implementar Esse Resultado no Meu Lançamento
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
     <section class="tools" id="ferramentas">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">Ferramentas</span>
-                <h2>Tecnologias que <span class="gradient-text">domino</span></h2>
-                <p>Trabalho com as melhores plataformas do mercado para garantir performance e confiabilidade.</p>
+                <span class="section-badge">Ecossistema de Tecnologia</span>
+                <h2>Ferramentas &amp; <span class="gradient-text">Integrações</span> de Alta Performance</h2>
+                <p>Domínio técnico das principais plataformas de marketing, vendas e inteligência artificial do mundo.</p>
             </div>
+
             <div class="tools-grid">
                 <div class="tool-card">
-                    <div class="tool-logo">
-                        <svg viewBox="0 0 40 40" fill="none">
-                            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
-                            <path d="M12 20l5 5L28 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
+                    <div class="tool-badge-top">E-mail &amp; CRM</div>
+                    <div class="tool-icon-wrapper">📧</div>
                     <h3>ActiveCampaign</h3>
-                    <p>Email marketing e automação de CRM com segmentação avançada</p>
+                    <p>Segmentação comportamental avançada, automações condicionais e higienização de listas.</p>
                 </div>
+
                 <div class="tool-card">
-                    <div class="tool-logo">
-                        <svg viewBox="0 0 40 40" fill="none">
-                            <rect x="4" y="4" width="32" height="32" rx="8" stroke="currentColor" stroke-width="2"/>
-                            <path d="M14 20h12M20 14v12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-                        </svg>
-                    </div>
+                    <div class="tool-badge-top">Chatbots &amp; DM</div>
+                    <div class="tool-icon-wrapper">🤖</div>
                     <h3>ManyChat</h3>
-                    <p>Chatbots e automação de mensagens para Instagram e WhatsApp</p>
+                    <p>Fluxos interativos de Direct no Instagram e atendimento inicial de WhatsApp com palavras-chave.</p>
                 </div>
+
                 <div class="tool-card">
-                    <div class="tool-logo">
-                        <svg viewBox="0 0 40 40" fill="none">
-                            <polygon points="20,4 36,20 20,36 4,20" stroke="currentColor" stroke-width="2" fill="none"/>
-                            <circle cx="20" cy="20" r="6" stroke="currentColor" stroke-width="2"/>
-                        </svg>
-                    </div>
-                    <h3>Make</h3>
-                    <p>Integrações e automações complexas entre múltiplas plataformas</p>
+                    <div class="tool-badge-top">Hub de Integrações</div>
+                    <div class="tool-icon-wrapper">⚡</div>
+                    <h3>Make.com</h3>
+                    <p>Construção de ecossistemas com webhooks, tratamento de dados JSON e fluxos com lógica condicional.</p>
                 </div>
+
                 <div class="tool-card">
-                    <div class="tool-logo">
-                        <svg viewBox="0 0 40 40" fill="none">
-                            <path d="M8 12h24M8 20h24M8 28h24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-                            <circle cx="32" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
-                            <circle cx="32" cy="20" r="3" stroke="currentColor" stroke-width="2"/>
-                            <circle cx="32" cy="28" r="3" stroke="currentColor" stroke-width="2"/>
-                        </svg>
-                    </div>
+                    <div class="tool-badge-top">WhatsApp API</div>
+                    <div class="tool-icon-wrapper">🟢</div>
                     <h3>Clint</h3>
-                    <p>Disparos em massa via API oficial do WhatsApp</p>
+                    <p>Gestão de CRM para WhatsApp e disparos em escala através da API oficial sem risco de bloqueio.</p>
                 </div>
+
                 <div class="tool-card">
-                    <div class="tool-logo">
-                        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M20 6c0 7.732-6.268 14-14 14 7.732 0 14 6.268 14 14 0-7.732 6.268-14 14-14-7.732 0-14-6.268-14-14z" />
-                        </svg>
-                    </div>
+                    <div class="tool-badge-top">Inteligência Artificial</div>
+                    <div class="tool-icon-wrapper">♊</div>
                     <h3>Google Gemini</h3>
-                    <p>Inteligência artificial para qualificação de leads e respostas inteligentes</p>
+                    <p>Qualificação em tempo real de mensagens e geração automatizada de respostas contextuais.</p>
                 </div>
+
                 <div class="tool-card">
-                    <div class="tool-logo">
-                        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="20" cy="20" r="12" stroke-dasharray="4 2" />
-                            <path d="M20 8v32M8 20h24" />
-                            <path d="M12 12l16 16M12 28l16-16" />
-                        </svg>
-                    </div>
-                    <h3>ChatGPT</h3>
-                    <p>Modelos de linguagem avançados integrados nos fluxos de conversação</p>
+                    <div class="tool-badge-top">AI LLM</div>
+                    <div class="tool-icon-wrapper">💬</div>
+                    <h3>ChatGPT &amp; Claude</h3>
+                    <p>Agentes inteligentes treinados na oferta do produto para atendimento pré-venda e FAQ.</p>
                 </div>
+
                 <div class="tool-card">
-                    <div class="tool-logo">
-                        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M20 30c5.523 0 10-4.477 10-10S25.523 10 20 10s-10 4.477-10 10 4.477 10 10 10z" />
-                            <path d="M14 14c3-3 9-3 12 0s3 9 0 12-9 3-12 0-3-9 0-12z" />
-                        </svg>
-                    </div>
-                    <h3>Claude</h3>
-                    <p>Agentes inteligentes focados em alta precisão e análise de dados</p>
+                    <div class="tool-badge-top">Checkouts</div>
+                    <div class="tool-icon-wrapper">💳</div>
+                    <h3>Hotmart / Eduzz / Kiwify</h3>
+                    <p>Integração total de eventos de compra, abandono de carrinho, PIX pendente e reembolso.</p>
                 </div>
+
                 <div class="tool-card">
-                    <div class="tool-logo">
-                        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="20" cy="18" r="7" />
-                            <path d="M20 11V5M17 8h6M11 25c2-2 5-3 9-3s7 1 9 3M20 22v10M16 32h8" />
-                        </svg>
-                    </div>
+                    <div class="tool-badge-top">Engenharia AI</div>
+                    <div class="tool-icon-wrapper">🚀</div>
                     <h3>Antigravity</h3>
-                    <p>Assistente IA para desenvolvimento rápido e integridade das aplicações</p>
+                    <p>Desenvolvimento e integridade de scripts customizados com código limpo e arquitetura segura.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Interactive Live Simulator Section with Smartphone Preview -->
     <section class="simulator-section" id="simulador">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">Simulador</span>
-                <h2>Como funciona na <span class="gradient-text">prática</span>?</h2>
-                <p>Clique abaixo para simular o fluxo automático de um lead em um lançamento real de 7 dígitos.</p>
+                <span class="section-badge">Simulador em Tempo Real</span>
+                <h2>Veja o <span class="gradient-text">Fluxo de Automação</span> em Ação</h2>
+                <p>Clique no botão abaixo para assistir a simulação ao vivo de como um lead transita da captação ao WhatsApp VIP.</p>
             </div>
-            
-            <div class="simulator-container">
-                <div class="simulator-bg-glow"></div>
-                
-                <div class="simulator-controls">
-                    <button class="btn btn-primary" id="btnSimulate">Iniciar Simulação</button>
-                    <button class="btn btn-secondary" id="btnResetSimulate" style="display: none;">Reiniciar</button>
+
+            <div class="simulator-wrapper">
+                <!-- Left: Control & Node Timeline -->
+                <div class="simulator-timeline-col">
+                    <div class="simulator-controls">
+                        <button class="btn btn-primary" id="btnSimulate">
+                            <span>▶ Iniciar Simulação</span>
+                        </button>
+                        <button class="btn btn-secondary" id="btnResetSimulate" style="display: none;">
+                            <span>↻ Reiniciar</span>
+                        </button>
+                    </div>
+
+                    <div class="simulator-nodes">
+                        <div class="sim-node" id="node1">
+                            <div class="node-number">1</div>
+                            <div class="node-content">
+                                <h4>Comentário no Instagram</h4>
+                                <p>Lead comenta "QUERO" no post de anúncio do evento.</p>
+                            </div>
+                        </div>
+
+                        <div class="sim-node" id="node2">
+                            <div class="node-number">2</div>
+                            <div class="node-content">
+                                <h4>Direct Automático (ManyChat)</h4>
+                                <p>Bot solicita e-mail e WhatsApp para liberação do ingresso.</p>
+                            </div>
+                        </div>
+
+                        <div class="sim-node" id="node3">
+                            <div class="node-number">3</div>
+                            <div class="node-content">
+                                <h4>Webhooks &amp; Make.com</h4>
+                                <p>Processa os dados, cadastra no ActiveCampaign e cria tag VIP.</p>
+                            </div>
+                        </div>
+
+                        <div class="sim-node" id="node4">
+                            <div class="node-number">4</div>
+                            <div class="node-content">
+                                <h4>WhatsApp API (Clint)</h4>
+                                <p>Dispara o ingresso personalizado e o link direto do Grupo VIP.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="simulator-status-box">
+                        <strong id="flowInfoTitle">Simulador Pronto</strong>
+                        <p id="flowInfoDesc">Pressione "Iniciar Simulação" para rodar o ciclo completo em tempo real.</p>
+                    </div>
                 </div>
-                
-                <div class="simulator-flow">
-                    <div class="flow-node" id="node1">
-                        <span class="flow-node-icon">💬</span>
-                        <h4>1. Comentário IG</h4>
-                        <p>Lead digita "QUERO" no post ou Direct</p>
+
+                <!-- Right: Interactive Smartphone Preview -->
+                <div class="simulator-phone-col">
+                    <div class="phone-mockup">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            <div class="phone-header">
+                                <span class="phone-time">09:41</span>
+                                <div class="phone-icons">📶 🔋</div>
+                            </div>
+                            <div class="phone-app-bar">
+                                <span class="app-avatar">🤖</span>
+                                <div>
+                                    <strong id="phoneAppName">Instagram Direct</strong>
+                                    <small id="phoneAppStatus">Online agora</small>
+                                </div>
+                            </div>
+                            <div class="phone-chat-body" id="phoneChatBody">
+                                <div class="chat-system-msg">Aguardando simulação iniciar...</div>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div class="flow-connector">
-                        <div class="flow-connector-active" id="connector1"></div>
-                    </div>
-                    
-                    <div class="flow-node" id="node2">
-                        <span class="flow-node-icon">🤖</span>
-                        <h4>2. ManyChat DM</h4>
-                        <p>Bot envia Direct pedindo contato</p>
-                    </div>
-                    
-                    <div class="flow-connector">
-                        <div class="flow-connector-active" id="connector2"></div>
-                    </div>
-                    
-                    <div class="flow-node" id="node3">
-                        <span class="flow-node-icon">⚡</span>
-                        <h4>3. Make.com</h4>
-                        <p>Cadastra no CRM e ActiveCampaign</p>
-                    </div>
-                    
-                    <div class="flow-connector">
-                        <div class="flow-connector-active" id="connector3"></div>
-                    </div>
-                    
-                    <div class="flow-node" id="node4">
-                        <span class="flow-node-icon">🟢</span>
-                        <h4>4. WhatsApp API</h4>
-                        <p>Dispara mensagem e link do Grupo VIP</p>
-                    </div>
-                </div>
-                
-                <div class="flow-info">
-                    <div class="flow-info-title" id="flowInfoTitle">Simulador Pronto</div>
-                    <div class="flow-info-desc" id="flowInfoDesc">Clique em "Iniciar Simulação" para rodar o fluxo completo de automação e entender as etapas.</div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Results & Social Proof -->
     <section class="results" id="resultados">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">Resultados</span>
-                <h2>Números que <span class="gradient-text">falam por si</span></h2>
-                <p>Resultados reais de lançamentos que foram transformados com automações inteligentes.</p>
+                <span class="section-badge">Resultados Comprovados</span>
+                <h2>Métricas que <span class="gradient-text">Transformam Lançamentos</span></h2>
+                <p>Impacto real de aplicar arquitetura de automação profissional.</p>
             </div>
+
             <div class="results-grid">
                 <div class="result-card">
                     <div class="result-number">50+</div>
-                    <div class="result-label">Lançamentos Realizados</div>
-                    <div class="result-bar">
-                        <div class="result-fill" data-width="90"></div>
-                    </div>
+                    <div class="result-label">Lançamentos Gerenciados</div>
+                    <div class="result-bar"><div class="result-fill" data-width="95%"></div></div>
                 </div>
+
                 <div class="result-card">
-                    <div class="result-number">Múltiplos 6-7</div>
-                    <div class="result-label">Dígitos Faturados</div>
-                    <div class="result-bar">
-                        <div class="result-fill" data-width="95"></div>
-                    </div>
+                    <div class="result-number">7 Dígitos</div>
+                    <div class="result-label">Escala Alcançada em Vendas</div>
+                    <div class="result-bar"><div class="result-fill" data-width="98%"></div></div>
                 </div>
+
                 <div class="result-card">
-                    <div class="result-number">3+</div>
-                    <div class="result-label">Anos de Experiência</div>
-                    <div class="result-bar">
-                        <div class="result-fill" data-width="75"></div>
-                    </div>
+                    <div class="result-number">+35%</div>
+                    <div class="result-label">Aumento Médio na Recuperação</div>
+                    <div class="result-bar"><div class="result-fill" data-width="90%"></div></div>
                 </div>
+
                 <div class="result-card">
                     <div class="result-number">100%</div>
-                    <div class="result-label">Comprometimento</div>
-                    <div class="result-bar">
-                        <div class="result-fill" data-width="100"></div>
-                    </div>
+                    <div class="result-label">Segurança contra Banimentos</div>
+                    <div class="result-bar"><div class="result-fill" data-width="100%"></div></div>
                 </div>
             </div>
-            <div class="testimonial">
-                <div class="quote-icon">"</div>
-                <p class="testimonial-text">Ricardo transformou completamente nosso processo de lançamento. As automações que ele criou nos permitiram escalar de 5 para 7 dígitos em menos de um ano. Profissional excepcional!</p>
+
+            <div class="testimonial-card">
+                <div class="quote-icon">“</div>
+                <p class="testimonial-text">
+                    "O Ricardo reorganizou toda a nossa infraestrutura de automações. Pela primeira vez tivemos 100% de previsibilidade nas entregas pelo WhatsApp e uma recuperação de boletos/PIX que injetou mais de R$ 180 mil no faturamento final do nosso lançamento."
+                </p>
                 <div class="testimonial-author">
-                    <div class="author-avatar">
-                        <img src="client.png" alt="Juliana M." width="48" height="48" loading="lazy">
-                    </div>
+                    <img src="client.png" alt="Juliana M." width="56" height="56" loading="lazy">
                     <div>
                         <strong>Juliana M.</strong>
-                        <span>Expert em Marketing & Lançamentos</span>
+                        <span>Co-produtora &amp; Estrategista de Lançamentos</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Workflow Process -->
     <section class="process" id="processo">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">Processo</span>
-                <h2>Como <span class="gradient-text">trabalho</span></h2>
-                <p>Um processo estruturado para garantir que cada lançamento seja um sucesso.</p>
+                <span class="section-badge">Metodologia</span>
+                <h2>Como Funciona a <span class="gradient-text">Parceria</span></h2>
+                <p>Processo transparente e estruturado para garantir tranquilidade antes, durante e após o carrinho abrir.</p>
             </div>
+
             <div class="process-steps">
                 <div class="process-step">
-                    <div class="step-number">01</div>
-                    <div class="step-content">
-                        <h3>Diagnóstico</h3>
-                        <p>Entendo seu negócio, seu público e seus objetivos para criar a estratégia perfeita.</p>
-                    </div>
+                    <div class="step-num">01</div>
+                    <h3>Diagnóstico &amp; Alinhamento</h3>
+                    <p>Análise da estrutura atual, definição de metas de captação e mapeamento dos pontos de vazamento de leads.</p>
                 </div>
                 <div class="process-step">
-                    <div class="step-number">02</div>
-                    <div class="step-content">
-                        <h3>Planejamento</h3>
-                        <p>Desenho todo o fluxo de automação, integrando as ferramentas certas para cada etapa.</p>
-                    </div>
+                    <div class="step-num">02</div>
+                    <h3>Arquitetura &amp; Fluxos</h3>
+                    <p>Desenho do mapa mental de todas as jornadas (captura, lembrete de live, abertura e recuperação de vendas).</p>
                 </div>
                 <div class="process-step">
-                    <div class="step-number">03</div>
-                    <div class="step-content">
-                        <h3>Implementação</h3>
-                        <p>Configuro todas as automações, integrações e testes para garantir funcionamento perfeito.</p>
-                    </div>
+                    <div class="step-num">03</div>
+                    <h3>Implementação &amp; Testes</h3>
+                    <p>Construção das integrações no Make, ManyChat, WhatsApp API e testes de simulação de carga extrema.</p>
                 </div>
                 <div class="process-step">
-                    <div class="step-number">04</div>
-                    <div class="step-content">
-                        <h3>Lançamento & Otimização</h3>
-                        <p>Acompanho o lançamento em tempo real e faço ajustes para maximizar conversões.</p>
-                    </div>
+                    <div class="step-num">04</div>
+                    <h3>Monitoramento ao Vivo</h3>
+                    <p>Acompanhamento em tempo real durante os picos de tráfego do evento para garantir 100% de disponibilidade.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- FAQ Accordion -->
     <section class="faq" id="faq">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">Dúvidas</span>
+                <span class="section-badge">Dúvidas Frequentes</span>
                 <h2>Perguntas <span class="gradient-text">Frequentes</span></h2>
-                <p>Respostas rápidas para as principais dúvidas sobre automações de lançamento.</p>
+                <p>Esclarecimentos sobre segurança, integrações e prazos de implementação.</p>
             </div>
-            
-            <div class="faq-list">
+
+            <div class="faq-accordion">
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>Você utiliza a API oficial do WhatsApp?</span>
-                        <span class="faq-icon-toggle">+</span>
+                        <span>Existe risco de banimento no WhatsApp usando suas automações?</span>
+                        <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Sim, todas as integrações de WhatsApp são feitas utilizando a API oficial (via Clint ou ManyChat), garantindo segurança máxima contra banimentos e suporte completo aos recursos da plataforma.</p>
+                        <p>Não. Utilizamos exclusivamente a <strong>API Oficial do WhatsApp Meta</strong> (através de provedores oficiais como Clint e ManyChat), garantindo total conformidade com os termos de serviço e imunidade a banimentos.</p>
                     </div>
                 </div>
-                
+
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>Qual a vantagem de usar o Make.com em vez do Zapier?</span>
-                        <span class="faq-icon-toggle">+</span>
+                        <span>Com qual antecedência devo contratar o serviço antes do lançamento?</span>
+                        <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>O Make.com oferece um custo-benefício extremamente superior, permitindo criar fluxos lógicos e condicionais complexos com maior flexibilidade e por uma fração do custo do Zapier.</p>
+                        <p>Recomendamos iniciar a estruturação de <strong>15 a 20 dias antes</strong> do início da captação de leads. Isso permite realizar todos os testes de carga, aprovação de templates no WhatsApp e integração completa dos checkouts com margem de segurança.</p>
                     </div>
                 </div>
-                
+
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>Como funciona a inteligência artificial (Gemini/ChatGPT/Claude) nas automações?</span>
-                        <span class="faq-icon-toggle">+</span>
+                        <span>Por que utilizar Make.com em vez de Zapier?</span>
+                        <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Utilizamos IAs generativas integradas via Make/API para qualificar leads em tempo real, responder perguntas frequentes de forma personalizada com contexto do produto, criar resumos automáticos no CRM e dinamizar o atendimento.</p>
+                        <p>O Make.com permite criar lógicas complexas com dezenas de ramificações condicionais por uma fração do custo do Zapier, garantindo um custo-benefício até 80% superior para operações com grande volume de dados.</p>
                     </div>
                 </div>
-                
+
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>Quanto tempo leva para estruturar o fluxo de um lançamento?</span>
-                        <span class="faq-icon-toggle">+</span>
+                        <span>Como a Inteligência Artificial (Gemini/ChatGPT) é aplicada no lançamento?</span>
+                        <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>O prazo varia de acordo com a complexidade, mas geralmente leva entre 7 a 15 dias úteis para realizar o diagnóstico, desenhar os fluxos, integrar as ferramentas e testar tudo antes do carrinho abrir.</p>
+                        <p>A IA analisa o contexto das dúvidas dos leads no Instagram e WhatsApp, respondendo com linguagem natural e humana, qualificando leads de alto ticket e encaminhando os leads prontos para comprar ao time comercial.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section class="contact" id="contato">
         <div class="container">
-            <div class="contact-wrapper">
+            <div class="contact-card-wrapper">
                 <div class="contact-info">
-                    <span class="section-badge">Contato</span>
-                    <h2>Vamos transformar seu <span class="gradient-text">próximo lançamento</span>?</h2>
-                    <p>Entre em contato e descubra como as automações podem escalar seus resultados.</p>
+                    <span class="section-badge">Fale Comigo</span>
+                    <h2>Pronto para escalar seu <span class="gradient-text">Próximo Lançamento</span>?</h2>
+                    <p>Preencha o formulário ou envie uma mensagem direta no WhatsApp para analisarmos o projeto da sua campanha.</p>
+
                     <div class="contact-details">
-                        <div class="contact-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                <polyline points="22,6 12,13 2,6"></polyline>
-                            </svg>
+                        <div class="detail-item">
+                            <div class="detail-icon">📱</div>
                             <div>
-                                <strong>Email</strong>
-                                <span>contato@ricardoprazeres.com</span>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                            </svg>
-                            <div>
-                                <strong>WhatsApp</strong>
+                                <strong>WhatsApp Direto</strong>
                                 <span>+55 (11) 94603-8180</span>
                             </div>
                         </div>
-                        <div class="contact-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                <circle cx="12" cy="10" r="3"></circle>
-                            </svg>
+                        <div class="detail-item">
+                            <div class="detail-icon">✉️</div>
                             <div>
-                                <strong>Localização</strong>
-                                <span>Brasil - Atendimento remoto</span>
+                                <strong>E-mail Comercial</strong>
+                                <span>contato@ricardoprazeres.com</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">📍</div>
+                            <div>
+                                <strong>Atendimento</strong>
+                                <span>Remoto para todo o Brasil e Exterior</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="contact-form-wrapper">
+
+                <div class="contact-form-box">
                     <form class="contact-form" id="contactForm">
                         <div class="form-group">
-                            <label for="name">Nome</label>
-                            <input type="text" id="name" name="name" required placeholder="Seu nome completo">
+                            <label for="name">Seu Nome Completo</label>
+                            <input type="text" id="name" name="name" required placeholder="Ex: Gabriel Santos">
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                            <label for="email">Seu E-mail Principal</label>
+                            <input type="email" id="email" name="email" required placeholder="seuemail@empresa.com">
                         </div>
                         <div class="form-group">
-                            <label for="whatsapp">WhatsApp</label>
-                            <input type="tel" id="whatsapp" name="whatsapp" required placeholder="(11) 94603-8180">
+                            <label for="whatsapp">WhatsApp com DDD</label>
+                            <input type="tel" id="whatsapp" name="whatsapp" required placeholder="(11) 99999-9999">
                         </div>
                         <div class="form-group">
-                            <label for="message">Mensagem</label>
-                            <textarea id="message" name="message" rows="4" required placeholder="Conte-me sobre seu projeto..."></textarea>
+                            <label for="message">Detalhes do seu Lançamento</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Ex: Tenho um lançamento no mês que vem e preciso automatizar WhatsApp e Make..."></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-full">Enviar mensagem</button>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Enviar Mensagem via WhatsApp</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-top">
                 <div class="footer-brand">
-                    <a href="#hero" class="logo">RP<span>Automações</span></a>
-                    <p>Transformando lançamentos digitais em máquinas de vendas com automações inteligentes.</p>
+                    <a href="#hero" class="logo">
+                        <div class="logo-icon">⚡</div>
+                        <span>RP<strong>Automações</strong></span>
+                    </a>
+                    <p>Arquitetura e gestão de automações estratégicas de alta performance para infoprodutores e lançadores.</p>
                 </div>
-                <div class="footer-links">
+                <div class="footer-nav">
                     <h4>Navegação</h4>
                     <ul>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#servicos">Serviços</a></li>
-                        <li><a href="#ferramentas">Ferramentas</a></li>
-                        <li><a href="#simulador">Simulador</a></li>
-                        <li><a href="#resultados">Resultados</a></li>
-                        <li><a href="#faq">Dúvidas</a></li>
-                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#sobre">Sobre Ricardo</a></li>
+                        <li><a href="#servicos">Soluções</a></li>
+                        <li><a href="#roi-calculator">Calculadora ROI</a></li>
+                        <li><a href="#simulador">Simulador Live</a></li>
+                        <li><a href="#faq">Dúvidas Frequentes</a></li>
                     </ul>
                 </div>
-                <div class="footer-links">
-                    <h4>Serviços</h4>
-                    <ul>
-                        <li><a href="#servicos">Email Marketing</a></li>
-                        <li><a href="#servicos">WhatsApp API</a></li>
-                        <li><a href="#servicos">Integrações Make</a></li>
-                        <li><a href="#servicos">Chatbots</a></li>
-                        <li><a href="#servicos">Certificados</a></li>
-                    </ul>
+                <div class="footer-contact">
+                    <h4>Contato Direto</h4>
+                    <p>WhatsApp: +55 (11) 94603-8180</p>
+                    <p>E-mail: contato@ricardoprazeres.com</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Ricardo Prazeres de Araújo. Todos os direitos reservados.</p>
+                <p>&copy; 2026 Ricardo Prazeres de Araújo. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Floating WhatsApp CTA -->
+    <a href="https://wa.me/5511946038180?text=Ol%C3%A1%20Ricardo!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida." target="_blank" rel="noopener" class="whatsapp-float-btn" aria-label="Abrir conversa no WhatsApp">
+        <span class="whatsapp-badge">1</span>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    </a>
 
     <script src="script.js"></script>
 </body>
