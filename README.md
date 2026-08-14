@@ -1,9 +1,9 @@
 <div align="center">
 
-# ⚡ Ricardo Prazeres | Gestor de Automações para Lançamentos Digitais
+# ⚡ Ricardo Prazeres | Engenharia & Gestão de Automações
 
   <p align="center">
-    <b>Landing Page & Portfólio Interativo de Alta Performance para Lançamentos de 6 e 7 Dígitos</b>
+    <b>Arquitetura e Gestão de Automações de Alta Performance para Lançamentos de 6 e 7 Dígitos</b>
   </p>
 
   <p align="center">
@@ -26,55 +26,46 @@
 
 ## 📌 Sobre o Projeto
 
-Este repositório contém o código-fonte da landing page profissional de **Ricardo Prazeres de Araújo**, Gestor de Automações especializado em lançamentos digitais (Semente, Interno, Meteorórico e Perpétuo) e graduando em Engenharia da Computação com background em Administração de Empresas.
+Repositório da landing page institucional e simulador de automações de **Ricardo Prazeres de Araújo**, especialista em arquitetura de automações para lançamentos digitais (Semente, Interno, Meteórico e Perpétuo), unindo a base técnica da Engenharia de Computação à visão de negócios da Administração.
 
-O projeto foi construído com foco em **alta conversão, estética moderna "Dark Luxury Tech", responsividade total e interatividade em tempo real**.
+A página foi desenvolvida com foco em **autoridade técnica, design sóbrio de alto padrão (Deep Obsidian & Technical Cobalt), performance extrema e zero dependências pesadas**.
 
 ---
 
-## 🚀 Principais Funcionalidades & Destaques
+## 🚀 Funcionalidades & Destaques
 
-### 🎨 1. Estética "Dark Luxury Tech" & Glassmorphism
-- **Design de Alto Padrão**: Fundo escuro luxuoso com auras de luz animadas (*ambient background glow*).
-- **Efeitos de Vidro (Glassmorphism)**: Cards com `backdrop-filter: blur(16px)`, iluminação de bordas ativas ao passar o mouse e transições fluidas.
-- **Tipografia Responsiva**: Integração com Google Fonts (*Plus Jakarta Sans* e *Inter*).
+### 🎨 1. Design & Performance
+- **Estética Profissional e Sóbria**: Eliminação de clichês visuais de templates automáticos.
+- **Tipografia e Carregamento Otimizados**: Integração com fontes do Google com swap assíncrono e preconnect.
+- **Zero Bloqueios de Renderização**: Código CSS e JS vanilla limpos e modulares.
 
 ### 🧮 2. Calculadora Interativa de ROI de Lançamento
-- Widget onde infoprodutores e lançadores podem simular:
-  - **Base de Leads** (1.000 a 100.000 leads)
-  - **Ticket Médio do Infoproduto** (R$ 197 a R$ 5.000)
-- Cálculo automático instantâneo:
-  - **Faturamento Adicional Estimado** (+3% de recuperação via WhatsApp e E-mail)
-  - **Leads Recuperados**
-  - **Horas Operacionais Salvas por Mês**
+- Simulação dinâmica com ajuste em tempo real de:
+  - **Base de Leads** (2.000 a 100.000 leads)
+  - **Ticket Médio** (R$ 197 a R$ 5.000)
+- Cálculo instantâneo do faturamento adicional estimado (+3% de conversão recuperada), volume de vendas salvas e horas operacionais economizadas.
 
-### 📱 3. Simulador de Automação com Mockup de Smartphone ao Vivo
-- **Visualização de Tela de Celular**: Mockup de smartphone que exibe interações em tempo real (Instagram Direct, Webhooks Make.com e WhatsApp API Oficial).
-- **Sincronização Nó a Nó**: Animação sequencial onde cada etapa do pipeline é destacada enquanto as mensagens surgem na tela do celular simulado.
+### 📱 3. Simulador de Automação em Tempo Real
+- Mockup interativo com animação de digitação, balões de conversa realistas (Instagram Direct e WhatsApp Oficial) e registro de webhook no CRM.
 
-### 📂 4. Soluções Filtráveis por Abas
-- Sistema de abas dinâmicas para explorar os serviços por momento da campanha:
-  - 🎯 **Pré-Lançamento** (Captura & Grupos VIP)
-  - 📺 **Lives & CPL** (Lembretes & Ingressos Automáticos)
-  - 🛒 **Carrinho Aberto** (Recuperação de Boletos/PIX)
-  - 🤖 **IAs Generativas** (Qualificação via Gemini/ChatGPT)
-  - 🔁 **Pós-Venda & Retenção** (Onboarding & NPS)
+### 📂 4. Filtro Dinâmico de Soluções
+- Navegação fluida por categorias: Captação & Grupos, Lives & Presença, Checkout & Recuperação e Inteligência Artificial.
 
-### 📲 5. Lead Capture com Integração Direta no WhatsApp
-- Formulário de contato inteligente que valida os dados do visitante, formata as informações do lançamento e redireciona automaticamente para uma conversa direta no WhatsApp do especialista.
+### 📲 5. Formulário com Redirecionamento Direto para WhatsApp
+- Máscara dinâmica `(XX) XXXXX-XXXX` e envio estruturado de mensagens diretamente para o canal do gestor.
 
 ---
 
-## 🛠️ Tecnologias & Ferramentas Utilizadas
+## 🛠️ Stack Tecnológico
 
-| Tecnologia / Ferramenta | Aplicação no Lançamento |
+| Ferramenta | Aplicação no Ecossistema |
 | :--- | :--- |
-| **Make.com** | Hub de integração via webhooks, tratamento de dados JSON e lógica condicional. |
-| **ActiveCampaign** | Funis de e-mail marketing, lead scoring e segmentação comportamental. |
-| **ManyChat** | Chatbots para Instagram Direct e atendimento automatizado. |
-| **Clint (WhatsApp API)** | Disparos em massa seguros pela API Oficial Meta sem riscos de banimento. |
-| **Google Gemini & LLMs** | Inteligência Artificial para qualificação de leads e respostas dinâmicas de FAQ. |
-| **HTML5 / CSS3 / JavaScript** | Desenvolvimento frontend puro sem dependências pesadas de terceiros. |
+| **Make.com** | Integração via webhooks, tratamento de dados JSON e lógica condicional. |
+| **ActiveCampaign** | Funis de e-mail, lead scoring e segmentação comportamental. |
+| **ManyChat** | Chatbots para Instagram Direct e qualificação inicial. |
+| **Clint (WhatsApp API)** | Disparos em escala pela API Oficial Meta sem risco de bloqueio. |
+| **Google Gemini / LLMs** | Agentes inteligentes para triagem de leads e suporte pré-venda. |
+| **HTML5 / CSS3 / JavaScript** | Frontend puro, responsivo e de alta performance. |
 
 ---
 
@@ -82,40 +73,21 @@ O projeto foi construído com foco em **alta conversão, estética moderna "Dark
 
 ```
 ricardo-prazeres-automacoes/
-├── index.html       # Estrutura HTML5 semântica, seções, SEO e Schema.org JSON-LD
-├── style.css        # Design System Dark Luxury Tech, auras animadas e mockup smartphone
-├── script.js       # Lógica da Calculadora ROI, Simulador ao Vivo, Abas e formulário WhatsApp
+├── index.html       # Estrutura semântica, SEO e Schema.org JSON-LD
+├── style.css        # Design System moderno, responsivo e modular
+├── script.js        # Lógica da Calculadora ROI, Simulador e Formulário
 ├── ricardo.png      # Foto oficial de perfil
 ├── client.png       # Avatar de depoimentos
-└── README.md        # Documentação oficial do repositório
+└── README.md        # Documentação do projeto
 ```
 
 ---
 
-## 💻 Como Rodar o Projeto Localmente
-
-1. **Clone este repositório:**
-   ```bash
-   git clone https://github.com/RicardoPrazeres/ricardo-prazeres-automacoes.git
-   ```
-
-2. **Acesse a pasta do projeto:**
-   ```bash
-   cd ricardo-prazeres-automacoes
-   ```
-
-3. **Abra o arquivo `index.html` no seu navegador favorito:**
-   - No macOS: `open index.html`
-   - No Windows: `start index.html`
-   - Ou utilize a extensão **Live Server** do VS Code.
-
----
-
-## 📬 Contato Profissional
+## 📬 Contato
 
 - 📱 **WhatsApp:** [+55 (11) 94603-8180](https://wa.me/5511946038180)
-- ✉️ **E-mail Comercial:** [contato@ricardoprazeres.com](mailto:contato@ricardoprazeres.com)
-- 🌐 **Website:** [ricardo-prazeres-automacoes.vercel.app](https://ricardo-prazeres-automacoes.vercel.app)
+- ✉️ **E-mail:** [contato@ricardoprazeres.com](mailto:contato@ricardoprazeres.com)
+- 🌐 **Site:** [ricardo-prazeres-automacoes.vercel.app](https://ricardo-prazeres-automacoes.vercel.app)
 
 ---
 
